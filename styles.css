@@ -1,83 +1,105 @@
-body, html {
+/* General Body Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f3f4f6;
     margin: 0;
     padding: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f4f4f4;
     text-align: center;
 }
 
+/* Header Section Styles */
 header {
-    background-color: #2c3e50;
+    background: #333;
+    color: #f5f5f5;
     padding: 20px;
     position: relative;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#rotating-logo {
+    width: 200px;  /* Increase size of the logo */
+    height: 200px; /* Keep it proportional */
+    animation: spin 6s linear infinite;
+    margin-bottom: 20px; /* Add some spacing below the logo */
+}
+
 #main-title {
+    font-family: 'Cinzel', serif;
     font-size: 3em;
-    color: #ecf0f1;
-    font-family: 'Garamond', serif;
-    margin: 0;
-}
-
-#logo {
-    width: 200px; /* Increase size of the logo */
-    height: auto;
-    animation: rotate 5s linear infinite; /* Keep the rotation animation */
-    display: block;
-    margin: 20px auto; /* Center the logo */
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-main {
-    padding: 40px 20px;
+    margin: 10px 0 5px 0;
 }
 
 h2 {
-    color: #34495e;
-    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 0;
 }
 
-p {
-    color: #2c3e50;
-    font-size: 1.2em;
-    width: 80%;
-    margin: 20px auto;
+/* Spin Animation for the Logo */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Food Options Section Styles */
+#food-options {
+    background: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
 }
 
-li {
-    background-color: #ecf0f1;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid #bdc3c7;
-    font-size: 1.5em;
+.menu {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background: #ebeff2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    font-family: 'Cinzel', serif;
+    margin: 0 0 10px 0;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+    color: #555;
 }
 
 .price {
-    font-weight: bold;
-    color: #e74c3c;
     font-size: 1.2em;
+    color: #e74c3c;
+    font-weight: bold;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
+/* About Section Styles */
+#about {
+    background: #f7fafc;
+    padding: 40px 20px;
 }
 
-a:hover {
-    text-decoration: underline;
+#about p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Footer Section Styles */
+footer {
+    background: #333;
+    color: #f5f5f5;
+    padding: 20px;
+    font-size: 0.8em;
 }
