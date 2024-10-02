@@ -16,20 +16,20 @@ header {
 }
 
 .logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 #rotating-logo {
-    width: 120px; /* Increased size for better visibility */
-    height: 120px; /* Increased size for better visibility */
+    width: 200px;  /* Increase size of the logo */
+    height: 200px; /* Keep it proportional */
     animation: spin 6s linear infinite;
+    margin-bottom: 20px; /* Add some spacing below the logo */
 }
 
 #main-title {
     font-family: 'Cinzel', serif;
-    font-size: 3.5em; /* Increased font size */
+    font-size: 3em;
     margin: 10px 0 5px 0;
 }
 
@@ -78,8 +78,9 @@ h2 {
 }
 
 .price {
+    font-size: 1.2em;
+    color: #e74c3c;
     font-weight: bold;
-    color: #333; /* Added styling for prices */
 }
 
 /* About Section Styles */
